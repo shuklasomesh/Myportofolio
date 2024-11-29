@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Somesh Shukla</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f1e54, #3a3a3a, #00ced1);
+      background-size: cover, 300% 300%;
+      animation: gradientAnimation 15s ease infinite;
+      color: #fff;
+      position: relative;
+      padding-top: 80px; /* Add space for fixed navbar */
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Gradient Animation */
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Floating Particles Effect */
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      animation: float 5s linear infinite, move 10s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes move {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(100vw); }
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(21, 63, 101, 0.395);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .navbar .menu {
+      display: flex;
+    }
+
+    .navbar .nav-link {
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: rgb(248, 252, 251);
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ff6347;
+    }
+
+    /* Contact Page */
+    .contact-section {
+      text-align: center;
+      padding: 80px 20px 40px;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .contact-section h2 {
+      font-size: 2rem;
+      color: #ff6347;
+      margin-bottom: 30px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-links a {
+      font-size: 1.3rem;
+      text-decoration: none;
+      color: #fff;
+      background-color: rgba(21, 63, 101, 0.7);
+      margin: 15px 0;
+      padding: 15px 30px;
+      border-radius: 5px;
+      width: 70%;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-links a:hover {
+      background-color: #ff6347;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(21, 63, 101, 0.395);
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">Somesh Shukla</div>
+  <div class="menu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+</div>
+
+<!-- Floating Particles -->
+<div class="particles">
+  <div class="particle" style="width: 10px; height: 10px; animation-delay: 0s;"></div>
+  <div class="particle" style="width: 15px; height: 15px; animation-delay: 2s;"></div>
+  <div class="particle" style="width: 12px; height: 12px; animation-delay: 4s;"></div>
+  <!-- Add more particles as needed -->
+</div>
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <h2>Let's Connect to Collaborate</h2>
+  <div class="contact-links">
+    <!-- Phone -->
+    <a href="tel:+9179682083">📞 Call Me: +91-9179682083</a>
+    <!-- Email -->
+    <a href="mailto:someshshukla263@gmail.com">📧 Email Me: someshshukla263@gmail.com</a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/somesh-shukla-02883823b" target="_blank">🔗 Connect on LinkedIn</a>
+    <!-- GitHub -->
+    <a href="https://github.com/shuklasomesh" target="_blank">🐙 Check My GitHub</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>Designed & Developed by Somesh Shukla</p>
+</footer>
+
+</body>
+</html>
+

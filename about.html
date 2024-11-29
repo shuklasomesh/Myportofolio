@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somesh Shukla - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f1e54, #3a3a3a, #00ced1);
+      animation: backgroundAnimation 8s infinite alternate;
+      color: white;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    @keyframes backgroundAnimation {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .contact {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .contact a {
+      color: #00ced1;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00ced1;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .skills, .extracurricular, .certifications, .projects, .academics, .personal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .badge, .card {
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      text-align: center;
+      min-width: 200px;
+    }
+
+    .badge:hover, .card:hover {
+      transform: scale(1.05);
+    }
+
+    .projects .card {
+      flex: 1 1 calc(30% - 20px);
+    }
+
+    .skills .badge, .extracurricular .card, .certifications .card, .academics .card, .personal .card {
+      flex: 1 1 calc(33.33% - 40px);
+    }
+
+    .progress-bar {
+      background: #00ced1;
+      height: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .progress-bar div {
+      height: 10px;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Project section - Add links directly */
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #222;
+      border-radius: 10px;
+      padding: 20px;
+      width: 30%;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .project-card a {
+      display: block;
+      color: #00ced1;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Back to Home Button */
+    .back-to-home {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #00ced1;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .back-to-home:hover {
+      background-color: #007a7a;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="passport size somesh.jpg" alt="Profile Picture">
+  <h1>Somesh Shukla</h1>
+  <p>B.Tech Student | Full-Stack Developer | Tech Enthusiast   | Java-Developer </p>
+  <div class="contact">
+    <a href="tel:+9179682083">📞 +91-9179682083</a>
+    <a href="mailto:someshshukla263@gmail.com">📧 someshshukla263@gmail.com</a>
+    <a href="https://www.linkedin.com/in/somesh-shukla-02883823b" target="_blank">🔗 LinkedIn</a>
+    <a href="https://github.com/shuklasomesh" target="_blank">🐙 GitHub</a>
+    <a href="https://someshportfolio.com" target="_blank">🌐 Portfolio</a>
+  </div>
+</header>
+
+<section>
+  <h2 class="section-title">Tech Skills</h2>
+  <div class="skills">
+    <div class="badge">HTML</div>
+    <div class="badge">CSS</div>
+    <div class="badge">JavaScript</div>
+    <div class="badge">React</div>
+    <div class="badge">Java</div>
+    <div class="badge">Spring</div>
+    <div class="badge">SQL</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Soft Skills</h2>
+  <div class="skills">
+    <div class="badge">Leadership</div>
+    <div class="badge">Dedication</div>
+    <div class="badge">Adaptability</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Extracurricular Achievements</h2>
+  <div class="extracurricular">
+    <div class="card">Engagement Lead at CSI AITR (2023-2024)</div>
+    <div class="card">Chairperson at CSI AITR (2024-Present)</div>
+    <div class="card">Core Team Member National Hackathon - PRAYATN</div>
+    <div class="card">ACRO-SET (Organizing Team Member In Association With IEEE(MP) and CSE dept )</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Certifications</h2>
+  <div class="certifications">
+    <div class="card">C Programming - Online School</div>
+    <div class="card">C++ Programming - Online School</div>
+    <div class="card">Oracle Certified Associate - Oracle </div>
+    <div class="card">Full Stack Development - TechSaksham (Microsoft)</div>
+    <div class="card">Java Core & Advanced - Online School</div>
+    <div class="card">Cybersecurity - Skill India (Tech Mahindra Foundation)</div>
+    <a href="https://drive.google.com/your-link" target="_blank" class="badge">View All Certificates</a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Projects</h2>
+  <div class="project-container">
+    <div class="project-card">
+      <h3>Weather App</h3>
+      <a href="https://github.com/your-github-link" target="_blank">View GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>ConstiQuest</h3>
+      <a href="https://github.com/your-github-link" target="_blank">View GitHub</a>
+    </div>
+    <div class="project-card">
+      <h3>Games Website</h3>
+      <a href="https://github.com/your-github-link" target="_blank">View GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Academics</h2>
+  <div class="academics">
+    <div class="card">2024 - B.Tech (CSE) - AITR</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Personal Info</h2>
+  <div class="personal">
+    <div class="card">Date of Birth: 26 April 2003</div>
+    <div class="card">Location: Madhya Pradesh, India</div>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="back-to-home">Back to Home</a>
+</footer>
+
+</body>
+</html>

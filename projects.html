@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Somesh Shukla</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f1e54, #3a3a3a, #00ced1);
+      background-size: 400% 400%;
+      animation: gradientShift 10s ease infinite;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Floating Particles Effect */
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .particle {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      animation: float 5s linear infinite, move 10s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes move {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(100vw); }
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      z-index: 10;
+      position: sticky;
+      top: 0;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      z-index: 5;
+    }
+
+    #projects {
+      padding: 40px 20px;
+      z-index: 5;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .project-card {
+      background: linear-gradient(135deg, #0f1e54, #3a3a3a, #00ced1);
+      border: 1px solid rgba(57, 57, 57, 0.197);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 5;
+    }
+
+    .project-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .project-card h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .project-card p {
+      font-size: 14px;
+    }
+
+    .project-card a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #0f1e54;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: relative;
+      margin-top: 40px;
+      z-index: 5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Particles -->
+  <div class="particles">
+    <!-- Particles -->
+    <div class="particle" style="width: 10px; height: 10px; top: 10%; left: 5%; animation-delay: 0s;"></div>
+    <div class="particle" style="width: 15px; height: 15px; top: 20%; left: 10%; animation-delay: 1s;"></div>
+    <div class="particle" style="width: 8px; height: 8px; top: 40%; left: 15%; animation-delay: 2s;"></div>
+    <div class="particle" style="width: 12px; height: 12px; top: 50%; left: 25%; animation-delay: 3s;"></div>
+    <div class="particle" style="width: 6px; height: 6px; top: 70%; left: 30%; animation-delay: 4s;"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Somesh Shukla</div>
+    <div class="menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Heading Section -->
+  <header>
+    <h1>Welcome to My Projects Section</h1>
+    <h2>Explore the Projects I Have Worked On</h2>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="weather.jpg" alt="Weather App">
+        <h3>Weather App</h3>
+        <p>Track live weather updates with ease.</p>
+        <a href="https://github.com/your-repo/weather-app" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="law.jpg.jpeg" alt="ConstiQuest">
+        <h3>ConstiQuest</h3>
+        <p>An interactive quiz to learn constitutional knowledge.</p>
+        <a href="https://github.com/your-repo/constiquest" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="game.jpg" alt="Games Website">
+        <h3>Games Website</h3>
+        <p>Platform offering engaging, fun, and educational games.</p>
+        <a href="https://github.com/your-repo/games-website" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="health.jpg" alt="HealthSecure">
+        <h3>HealthSecure</h3>
+        <p>A platform to manage health securely and effectively.</p>
+        <a href="https://github.com/your-repo/healthsecure" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="e.jpg" alt="E-learning">
+        <h3>E-learning</h3>
+        <p>Online learning platform to enhance skills and knowledge.</p>
+        <a href="https://github.com/your-repo/e-learning" target="_blank">GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="communnity.jpg" alt="Community Forum">
+        <h3>Community Forum</h3>
+        <p>Discussion platform for knowledge-sharing and collaboration.</p>
+        <a href="https://github.com/your-repo/community-forum" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Somesh Shukla. Designed with ❤️ and creativity.</p>
+  </footer>
+
+</body>
+</html>
